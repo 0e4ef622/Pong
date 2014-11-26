@@ -40,7 +40,7 @@ setInterval(function(){
 	ctx.beginPath();
 	ctx.fillStyle = "white";
 	ctx.fillRect(p1.x - p1.w/2, h - 27, p1.w, 12); //draw p1 paddle
-	ctx.fillRect(p2.xp2.w/2, 15, p1.w, 12); //draw p2 paddle
+	ctx.fillRect(p2.x - p2.w/2, 15, p1.w, 12); //draw p2 paddle
 	ctx.arc(ball.x, ball.y, ball.r, 0, 8); //draw ball
 	ctx.fill();
 	p1.x += p1.dir*w/100;
